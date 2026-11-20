@@ -1,0 +1,195 @@
+
+:root {
+    --main: #7c5cff;
+    --main-dark: #5e3df0;
+    --soft-bg: #f4f2ff;
+    --card-shadow: 0 10px 30px rgba(124, 92, 255, 0.12);
+}
+
+body {
+    background: #f6f5fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Navbar ===== */
+.bgColor {
+    background: linear-gradient(90deg, #7c5cff, #a06bff) !important;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 20px rgba(124, 92, 255, 0.25);
+    padding: 10px 15px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* ===== Left Form Card ===== */
+.card {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.form-field {
+    background: white;
+}
+
+.form-label {
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+}
+
+.form-control {
+    border-radius: 12px !important;
+    border: 1.5px solid #e8e4ff !important;
+    padding: 10px 12px !important;
+}
+
+.form-control:focus {
+    border-color: var(--main) !important;
+    box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.15) !important;
+}
+
+.form-text {
+    color: #9a9a9a !important;
+    font-size: 12.5px;
+}
+
+/* ===== Post Button ===== */
+.editbtn {
+    background: linear-gradient(90deg, #7c5cff, #a06bff) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 10px 28px !important;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 12px;
+    box-shadow: 0 6px 15px rgba(124, 92, 255, 0.3);
+    transition: 0.2s;
+}
+
+.editbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(124, 92, 255, 0.35);
+}
+
+/* ===== Background Images ===== */
+.bgimgcont {
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.bgimg {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.bgimg:hover {
+    transform: scale(1.15);
+}
+
+.selected {
+    border: 3px solid var(--main) !important;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.2);
+}
+
+/* ===== Right Side Post Cards ===== */
+#postContainer .card {
+    border-radius: 20px !important;
+    background: white;
+}
+
+#postContainer .card-header {
+    background: linear-gradient(90deg, #7c5cff, #a06bff) !important;
+    color: white !important;
+    font-weight: 700;
+    border: none !important;
+    padding: 12px 18px;
+}
+
+#postContainer blockquote p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}
+
+#postContainer figcaption {
+    font-size: 14.5px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Edit / Delete inside post */
+#postContainer .editbtn {
+    width: auto;
+    margin: 0 !important;
+}
+
+#postContainer .btn-subtle {
+    background: #ffeaea !important;
+    color: #e63946 !important;
+    border-radius: 12px !important;
+    font-weight: 700;
+    border: none !important;
+    padding: 10px 22px !important;
+}
+
+#postContainer .btn-subtle:hover {
+    background: #e63946 !important;
+    color: white !important;
+}
+
+/* ===== Post ke andar wala Edit Button ===== */
+.editPostBtn {
+    background: #efeaff !important;
+    color: #7c5cff !important;
+    border: 1.5px solid #d9d0ff !important;
+    border-radius: 12px !important;
+    padding: 9px 28px !important;
+    font-weight: 700 !important;
+    transition: 0.2s;
+}
+
+.editPostBtn:hover {
+    background: #7c5cff !important;
+    color: white !important;
+    border-color: #7c5cff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(124, 92, 255, 0.3);
+}
+
+.editPostBtn {
+    background: #efeaff !important;
+    color: #7c5cff !important;
+    border: 1.5px solid #d9d0ff !important;
+    border-radius: 12px !important;
+    padding: 9px 28px !important;
+    font-weight: 700 !important;
+    transition: 0.2s;
+}
+
+.editPostBtn:hover {
+    background: #7c5cff !important;
+    color: white !important;
+    border-color: #7c5cff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(124, 92, 255, 0.3);
+}

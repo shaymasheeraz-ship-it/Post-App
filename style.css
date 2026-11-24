@@ -39,8 +39,16 @@ body {
     overflow: hidden;
 }
 
+/* Card 1 - Background ke liye */
+#formCard {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: white;
+}
+
 .form-field {
-    background: white;
+    background: transparent;
 }
 
 .form-label {
@@ -53,6 +61,7 @@ body {
     border-radius: 12px !important;
     border: 1.5px solid #e8e4ff !important;
     padding: 10px 12px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
 }
 
 .form-control:focus {
@@ -113,7 +122,10 @@ body {
 /* ===== Right Side Post Cards ===== */
 #postContainer .card {
     border-radius: 20px !important;
-    background: white;
+    background-color: white;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 #postContainer .card-header {
@@ -158,24 +170,6 @@ body {
 }
 
 /* ===== Post ke andar wala Edit Button ===== */
-.editPostBtn {
-    background: #efeaff !important;
-    color: #7c5cff !important;
-    border: 1.5px solid #d9d0ff !important;
-    border-radius: 12px !important;
-    padding: 9px 28px !important;
-    font-weight: 700 !important;
-    transition: 0.2s;
-}
-
-.editPostBtn:hover {
-    background: #7c5cff !important;
-    color: white !important;
-    border-color: #7c5cff !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(124, 92, 255, 0.3);
-}
-
 .editPostBtn {
     background: #efeaff !important;
     color: #7c5cff !important;

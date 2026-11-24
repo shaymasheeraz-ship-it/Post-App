@@ -60,53 +60,39 @@
 </nav>
 </div>
 
-
-
-
 <!-- card1 -->
 
 <div class="container d-flex " >
-<div class="card mt-4" style="max-width: 320px">
+<div class="card mt-4" id="formCard" style="max-width: 320px">
     <div class="form-field p-4" >
   <label for="fieldText" class="form-label ">Title</label>
   <input type="email" class="form-control" id="title" placeholder="Add your ideas here">
   <div class="form-text">
     We’ll never share your email with anyone else.
   </div>
-<!-- </div> -->
 
-    <!-- <div class="form-field"> -->
    <label for="fieldTextarea" class="form-label">Description</label>
   <textarea class="form-control" id="desc" placeholder="What's up.." rows="3"></textarea>
   <div class="form-text">
 Add your favourite background
   </div>
 
-
-
   <div class=" bgimgcont d-flex mb-3 justify-content-between ">
 
-    <img class="bgimg" onclick="bgImg('./imgs/images (1).jpeg')" src="./imgs/images (1).jpeg" alt="">
-    <img class="bgimg" onclick="bgImg('./imgs/images (2).jpeg')" src="./imgs/images (2).jpeg" alt="">
-    <img class="bgimg" onclick="bgImg('./imgs/images (3).jpeg')" src="./imgs/images (3).jpeg" alt="">
-    <img class="bgimg" onclick="bgImg('./imgs/images.jpeg')" src="./imgs/images.jpeg" alt="">
-    <img class="bgimg" onclick="bgImg('./imgs/white-gray-abstract-gradient-background_69286-550.avif')" src="./imgs/white-gray-abstract-gradient-background_69286-550.avif" alt="">
+    <img class="bgimg" onclick="bgImg(event, './imgs/images (1).jpeg')" src="./imgs/images (1).jpeg" alt="">
+    <img class="bgimg" onclick="bgImg(event, './imgs/images (2).jpeg')" src="./imgs/images (2).jpeg" alt="">
+    <img class="bgimg" onclick="bgImg(event, './imgs/images (3).jpeg')" src="./imgs/images (3).jpeg" alt="">
+    <img class="bgimg" onclick="bgImg(event, './imgs/images.jpeg')" src="./imgs/images.jpeg" alt="">
+    <img class="bgimg" onclick="bgImg(event, './imgs/white-gray-abstract-gradient-background_69286-550.avif')" src="./imgs/white-gray-abstract-gradient-background_69286-550.avif" alt="">
   </div>
-
 
        <button id = "postid" type="button" class="btn editbtn " onclick="post()">Post</button>
 
-
-
-
 </div>
 </div>
-
 
  <!-- card 2 -->
 <!-- in script.js  -->
-
-
 
   <div class="col-12 col-md-7 col-lg-8" id="postContainer">
                
@@ -114,15 +100,9 @@ Add your favourite background
 
 </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
         crossorigin="anonymous"></script>
-                                                       
-
-
-
-
 
 <script src="script.js"></script>
 </body>
